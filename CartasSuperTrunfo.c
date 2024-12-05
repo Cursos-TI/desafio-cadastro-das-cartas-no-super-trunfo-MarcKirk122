@@ -34,7 +34,7 @@ int main() {
     printf("Digite o número de pontos turísticos: ");
     scanf("%d", &cartaCidade.numeroPontosTuristicos);
 
-    cartaCidade.densidadePopulacional = cartaCidade.populacao/cartaCidade.area;
+    cartaCidade.densidadePopulacional = (double) cartaCidade.populacao/cartaCidade.area;
     cartaCidade.pibPerCapita = cartaCidade.pib/cartaCidade.populacao;
     
     //Impressão dos dados
@@ -43,7 +43,7 @@ int main() {
     printf("Nome da cidade: %s\n", cartaCidade.nome);
     printf("População da cidade: %li\n", cartaCidade.populacao);
     printf("Área da cidade: %.2lf km²\n", cartaCidade.area);
-    printf("Densidade Populacional: %.2lf pessoas/km²\n", cartaCidade.densidadePopulacional);
+    printf("Densidade Populacional: %.2f pessoas/km²\n", cartaCidade.densidadePopulacional);
     printf("PIB da cidade: %.2lf bilhões de reais\n", cartaCidade.pib);
     printf("PIB per Capita: %.2lf reais\n", cartaCidade.pibPerCapita);
     printf("Número de pontos turísticos: %d\n", cartaCidade.numeroPontosTuristicos);
